@@ -1,5 +1,8 @@
 -- 1. Llista el nom de tots els productes que hi ha en la taula producto.
-
+SELECT p.apellido1, p.apellido2, p.nombre
+FROM persona p
+JOIN alumno a ON p.id = a.id_persona
+ORDER BY p.apellido1 ASC, p.apellido2 ASC, p.nombre ASC;
 
 -- 2. Llista els noms i els preus de tots els productes de la taula producto.
 
